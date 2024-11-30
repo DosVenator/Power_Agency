@@ -38,6 +38,12 @@ body {
 	&.section--bg {
 		background-color: $color_bg_2;
 	}
+	&.section__decor {
+		&::after,
+		&::before {
+			
+		}
+	}
 }
 
 .section__title {
