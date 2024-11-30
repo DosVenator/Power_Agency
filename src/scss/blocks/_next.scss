@@ -2,4 +2,146 @@
 
 .container_in {
     display: flex;
+	justify-content: center;
+}
+.container_col {
+	width: calc(100% / 2);
+}
+.title_col {
+font-size: 4rem;
+font-weight: 700;
+line-height: 5.2rem;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: $color_title;
+margin-bottom: 1rem;
+
+}
+.descr_col {
+font-size: 2rem;
+font-weight: 400;
+line-height: 3.6rem;
+text-align: left;
+text-decoration-skip-ink: none;
+color: #1B1D21;
+margin-bottom: 5rem;
+}
+.footer_col {
+	position: relative;
+	border: none;
+	width: 49.1rem;
+	height: 7.2rem;
+	border-radius: 1.2rem;
+	background: linear-gradient(#fff, 50%, rgba($color: #706FE5, $alpha: 0.2));
+
+}
+.input__footer {
+	width: 20rem;
+	height: 2.4rem;
+	
+	border: none;
+	position: absolute;
+	top: 2.5rem;
+	left: 5.7rem;
+	
+	
+	
+}
+input::placeholder {
+	color: #2E3E5C;
+	// position: absolute;
+
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 2.4rem;
+
+
+}
+
+.footer_col::after {
+	content: '';
+	position: absolute;
+	background-image: url(../../imgs/comments/email\ \(7\)\ 1.png);
+	background-repeat: no-repeat;
+	width: 2.4rem;
+	height: 2.4rem;
+	left: 2rem;
+	top: 2.5rem;
+}
+.btn_footer {
+	width: 17.2rem;
+	height: 4.7rem;
+	background-color: #706FE5;
+	position: absolute;
+	top: 1.3rem;
+	right: 1.9rem;
+	border-radius: 1.2rem;
+	font-size: 1.8rem;
+	color: #fff;
+	box-shadow: 0px 6px 20px 0px #706FE580;
+
+}
+.btn_footer:hover {
+	cursor: pointer;
+}
+.fon {
+	width: 5rem;
+	height: 5rem;
+	background-color: rgba($color: #706FE5, $alpha: 0.2);
+	position: relative;
+	border-radius: 1.2rem;
+	
+}
+.img_logo {
+	width: 2.4rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+.container_col--grid {
+	display: grid;
+	grid-template-areas:
+	'1g 2g'
+	'3g 4g';
+	row-gap: 6rem;
+	column-gap: 3rem;
+}
+
+.contaimer_item {
+	grid-area: 1g;
+}
+.contaimer_item--two {	
+	grid-area: 2g;
+}
+.contaimer_item--three {	
+	grid-area: 3g;
+}
+.contaimer_item--four {	
+	grid-area: 4g;
+}
+.item_logo {
+	margin-bottom: 1.2rem;
+}
+.item_title {
+	
+font-size: 2rem;
+font-weight: 600;
+line-height: 2.8rem;
+text-align: left;
+color: #1E1F4B;
+margin-bottom: 1.2rem;
+
+
+}
+.item_descr {
+	
+
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2.8rem;
+	text-align: left;
+	
+
 }

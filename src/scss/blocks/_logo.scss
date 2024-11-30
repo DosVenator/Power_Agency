@@ -1,0 +1,26 @@
+@use '../helpers/abstracts' as *;
+
+
+
+.section__logo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4.7rem;
+}
+.logo {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.logo_in__item {
+    max-width:calc(100% / 5);
+    
+    
+}
+.item_img {
+    align-content: center;
+}
+
+.item_img__in {
+    display: block;
+    margin: 0 auto;
+}

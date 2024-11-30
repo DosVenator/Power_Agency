@@ -1,0 +1,227 @@
+@use '../helpers/abstracts' as *;
+// .footer {
+//     padding: 3rem 0;
+//     width: 144rem;
+//     height: 42.8rem;
+//     background-color: #2E3E5C;
+//     margin-bottom: 5.7rem;
+//   }
+  
+//   .footer_menu {
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 90px;
+//   }
+  
+//   .footer_logo {
+//     width: 9.4rem;
+//     height: 3.8rem;
+//   }
+  
+//   .nav {
+//     margin-bottom: 8.9rem;
+//   }
+  
+//   .nav__link {
+//     font-family: Inter;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 28px;
+//     text-align: left;
+//     text-underline-position: from-font;
+//     -webkit-text-decoration-skip-ink: none;
+//             text-decoration-skip-ink: none;
+//   }
+//   .nav__link.nav__link--header {
+//     color: #1E1F4B;
+//   }
+  
+//   .nav__link.nav__link--footer {
+//     color: #FFFFFF;
+//   }
+  
+//   .company_logo {
+//     width: 114rem;
+//     height: 2.7rem;
+//     font-family: Poppins;
+//     font-size: 1.8rem;
+//     font-weight: 700;
+//     line-height: 2.7rem;
+//     text-align: left;
+//     text-underline-position: from-font;
+//     -webkit-text-decoration-skip-ink: none;
+//             text-decoration-skip-ink: none;
+//     color: #FFFFFF;
+//     margin-bottom: 1.9rem;
+//   }
+  
+//   .media_img_box {
+//     width: 1.3rem;
+//     height: 1.6rem;
+//   }
+  
+//   .media_img_block {
+//     width: 1.4rem;
+//     height: 1.6rem;
+//   }
+  
+//   .media_img {
+//     width: 100%;
+//     height: 100%;
+//     -o-object-position: center;
+//        object-position: center;
+//     -o-object-fit: cover;
+//        object-fit: cover;
+//   }
+  
+//   .footer_media_img_box {
+//     width: 4.8rem;
+//     height: 4.8rem;
+//     border-radius: 200rem;
+//     opacity: 0px;
+//     background-color: #706FE5;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  
+//   .footer_media_box {
+//     display: flex;
+//     -moz-column-gap: 74rem;
+//          column-gap: 74rem;
+//     flex-direction: row;
+//     border-bottom: 1px solid #EAEEF3;
+//     padding-bottom: 4.8rem;
+//     margin-bottom: 4.8rem;
+//   }
+  
+//   .footer_media_icons {
+//     display: flex;
+//     -moz-column-gap: 1.6rem;
+//          column-gap: 1.6rem;
+//     flex-direction: row;
+//   }
+  
+//   .footer_rights {
+//     font-family: Poppins;
+//     font-size: 1.4rem;
+//     font-weight: 400;
+//     line-height: 2rem;
+//     text-align: center;
+//     text-underline-position: from-font;
+//     -webkit-text-decoration-skip-ink: none;
+//             text-decoration-skip-ink: none;
+//     color: #FFFFFF;
+//   }
+  
+
+.footer {
+    max-width: 100%;
+    height: 42.8rem;
+    background-color: #2E3E5C;
+}
+.container_footer {
+    padding-top: 5.1rem;
+}
+.container_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 114.4rem;
+    height: 9.6rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 4.8rem;
+    
+}
+.media_block {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background-color: #706FE5;
+    display: flex;
+}
+.footer_icons {
+    display: flex;
+    column-gap: 1.6rem;
+    justify-content: right;
+    & .media_img {
+        display: block;
+        margin: auto;
+        
+    }
+}
+.logo_block {
+    width: 9.4rem;
+    height: 3.8rem;
+}
+
+.container_two {
+    flex-direction: column;
+    justify-content: left;
+    height: 26.7rem;
+    color: #fff;
+    width: 114rem;
+
+    & .footer_title {    
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    text-align: left;
+    margin-bottom: 1.9rem;
+    }
+
+    & .footer_down {
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+
+    }
+    
+}
+.footer_menu {
+    display: block;
+    margin: auto 0;
+}
+// .footer_nav {
+//     display: block;
+//     margin: auto 0;
+// }
+.ul {
+    display: flex;
+    font-size: 1.4rem;
+    column-gap: 8rem;
+
+    font-weight: 400;
+   
+    text-align: center;
+    & .link_nav {
+        color: #fff;
+        text-decoration: none;
+        line-height: 2rem;
+    }
+}
+.footer_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7.6rem;
+}
+.footer_buttons {
+    width: 18.1rem;
+    height: 4.7rem;
+    background-color: #706FE5;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    
+    & .footer_btn {
+       display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    text-align: center;
+    margin: auto 0;
+
+    }
+}

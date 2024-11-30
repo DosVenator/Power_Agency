@@ -35,15 +35,22 @@ body {
 .section {
 	width: 100%;
 	padding: 10rem 0;
+	position: relative;
 	&.section--bg {
 		background-color: $color_bg_2;
 	}
-	&.section__decor {
-		&::after,
-		&::before {
-			
-		}
-	}
+	// &.section__decor {
+	// 	&::after,
+	// 	&::before {
+	// 		content: '';
+	// 		position: absolute;
+	// 		width: 10rem;
+	// 		height: 7.2rem;
+	// 		background-image: url(../../src/imgs/comments/Group\ 2172\ \(1\).svg);
+	// 		left: 0;
+	// 		top: 0;
+	// 	}
+	// }
 }
 
 .section__title {

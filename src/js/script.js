@@ -9,3 +9,9 @@ const swiperOne = new Swiper('.swiper_1', {
         swiper: swiperTwo,
       },
 });
+const swiperThree = new Swiper('.swiper_3', {
+    watchSlidesProgress: true,
+    slidesPerView: 4,
+    loop: true,
+   
+});
