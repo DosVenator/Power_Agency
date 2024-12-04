@@ -1,0 +1,62 @@
+@use '../helpers/abstracts' as *;
+.container_in--products {
+    flex-direction: column;
+}
+.container_in__descr {
+    display: flex;
+    column-gap: 2.9rem;
+   
+}
+.section__descr--products {
+font-size: 2rem;
+font-weight: 400;
+line-height: 3.6rem;
+color: $color_text;
+}
+.row:not(:last-child) {
+    margin-bottom: 4rem;
+}
+.col {
+    max-width: 100%;
+}
+.col--products {
+    width: calc((100% / 2) - 2.9rem);
+    
+}
+.col_grid {
+    display: grid;
+    gap: 2.8rem;
+    grid-template-areas:
+    "1pr 2pr"
+    "3pr 4pr";
+}
+.col_1 {
+    grid-area: 1pr;
+}
+.col_2 {
+    grid-area: 2pr;
+}
+.col_3 {
+    grid-area: 3pr;
+}
+.col_4 {
+    grid-area: 4 pr;
+}
+
+.products_img--one {
+    width: 55.5rem;
+    height: 44.8rem;
+}
+
+.h3_pr {
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 2.6rem;
+text-align: left;
+}
+.h2_pr {
+font-size: 2.4rem;
+font-weight: 700;
+line-height: 2.8rem;
+text-align: left;
+}

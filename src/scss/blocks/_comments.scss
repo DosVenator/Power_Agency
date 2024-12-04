@@ -2,6 +2,9 @@
 @use '../blocks/next';
 @use '../blocks/logo';
 @use '../blocks/footer';
+@use '../blocks/header';
+@use '../blocks/products';
+
 .comments {
 	display: block;
 	position: relative;
