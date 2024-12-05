@@ -1,6 +1,8 @@
 @use '../helpers/abstracts' as *;
 
-
+.swiper_3 {
+    overflow: hidden;
+}
 
 .section__logo {
     font-size: 2rem;
