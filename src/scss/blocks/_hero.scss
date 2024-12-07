@@ -1,0 +1,80 @@
+@use '../helpers/abstracts' as *;
+
+.hero {
+    display: flex;
+    column-gap: 6rem;
+}
+.hero__info_wrap {
+    display: block;
+    max-width: 60%;
+    flex-shrink: 0;
+}
+.hero__title {
+    font-size: 6rem;
+    line-height: 1.83;
+    font-weight: 700;
+    color: $color_title;
+    margin-bottom: 4.2rem;
+
+    strong {
+        display: inline-block;
+        position: relative;
+        color: $color_accent;
+        padding: 0 3.8rem;
+        border: .8rem solid $color_accent ;
+
+        span {
+            --circle-d: 2.8rem;
+            --minus-hulf-circle-d: calc(var(--circle-d)*(-0.5)); 
+            width: var(--circle-d);
+            height: var(--circle-d);
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            border: .8rem solid $color_accent;
+            background-color: $color_white;
+
+            &:nth-child(1) {
+                top: var(--minus-hulf-circle-d);
+                left: var(--minus-hulf-circle-d);
+            }
+            &:nth-child(2) {
+                top: var(--minus-hulf-circle-d);
+                right: var(--minus-hulf-circle-d);
+            }
+            &:nth-child(3) {
+                bottom: var(--minus-hulf-circle-d);
+                left: var(--minus-hulf-circle-d);
+            }
+            &:nth-child(4) {
+                bottom: var(--minus-hulf-circle-d);
+                right: var(--minus-hulf-circle-d);
+            }
+        }
+    }
+}
+
+.hero__descr {
+    &:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+}
+.hero__btns {
+    display: flex;
+    column-gap: 3.4rem;
+}
+
+.btn_watch {
+    display: flex;
+    column-gap: 1.2rem;
+}
+.btn_watch__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color_accent, 15%);
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+
+}
