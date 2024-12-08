@@ -1,5 +1,19 @@
 @use '../helpers/abstracts' as *;
+.skroll_block {
+	position: absolute;
+	top: 2rem;
+	right: calc(50% - 9rem);
+	background-color: $color_white;
+	text-transform: uppercase;
+
+	& .skroll {
+	text-decoration: none;
+	color: $color_accent;
+	}
+}
+
 .footer {
+    position: relative;
     max-width: 100%;
     height: 42.8rem;
     background-color: #2E3E5C;
