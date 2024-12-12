@@ -24,6 +24,11 @@
 }
 .header_nav {
     display: flex;
+    
+    @include bp($point_3) {
+    display: none;
+    }
+    
 }
 .header_nav_in {
     margin: auto 0;
