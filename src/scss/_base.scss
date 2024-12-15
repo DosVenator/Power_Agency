@@ -71,6 +71,11 @@ body {
 	
 	}
 	
+	@include bp($point_5, max) {
+		padding: 3rem;
+	}
+	
+	
 	// &.section__decor {
 	// 	&::after,
 	// 	&::before {

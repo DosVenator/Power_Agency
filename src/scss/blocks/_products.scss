@@ -5,6 +5,12 @@
 .container_in__descr {
     display: flex;
     column-gap: 2.9rem;
+    
+    @include bp($point_5, max) {
+        flex-direction: column;
+        width: 100%;
+    }
+    
    
 }
 .section__descr--products {
@@ -18,9 +24,31 @@ color: $color_text;
 }
 .col {
     max-width: 100%;
+    & .col_img {
+        
+        @include bp($point_5, max) {
+        display: flex;
+        justify-content: center;
+        }
+        & .products_img {
+            
+            @include bp($point_5, max) {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+.col_in {
+    width: 100%;
 }
 .col--products {
     width: calc((100% / 2) - 2.9rem);
+    
+    @include bp($point_5, max) {
+    width: 100%;
+    }
+    
     
 }
 .col_grid {
@@ -46,6 +74,7 @@ color: $color_text;
 .products_img--one {
     width: 55.5rem;
     height: 44.8rem;
+    max-width: 100%;
 }
 
 .h3_pr {

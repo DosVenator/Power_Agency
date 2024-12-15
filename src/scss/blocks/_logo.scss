@@ -25,4 +25,19 @@
 .item_img__in {
     display: block;
     margin: 0 auto;
+
+    
+    @include bp($point_4, max) {
+        max-width: 5rem;
+        max-height: 2rem;
+    }
+    
+}
+
+.section--logo {
+    
+    @include bp($point_4, max) {
+    padding: 2rem 0;
+    }
+    
 }
